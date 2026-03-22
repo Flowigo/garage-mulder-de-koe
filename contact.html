@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Afspraak | MDK MOTORS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-primary": "#690000",
+                "surface-container-highest": "#353534",
+                "on-background": "#e5e2e1",
+                "outline-variant": "#5f3f3a",
+                "primary-fixed": "#ffdad4",
+                "on-primary-container": "#fff7f5",
+                "surface-dim": "#131313",
+                "on-primary-fixed-variant": "#930100",
+                "primary-container": "#e60000",
+                "on-secondary": "#313030",
+                "outline": "#b08781",
+                "inverse-primary": "#c00000",
+                "background": "#131313",
+                "surface-tint": "#ffb4a8",
+                "secondary-container": "#474746",
+                "on-surface-variant": "#e9bcb5",
+                "surface-container-high": "#2a2a2a",
+                "surface-container-low": "#1c1b1b",
+                "primary-fixed-dim": "#ffb4a8",
+                "surface-container": "#201f1f",
+                "surface-variant": "#353534",
+                "primary": "#E60000",
+                "on-surface": "#e5e2e1",
+                "surface-bright": "#393939",
+                "surface-container-lowest": "#0e0e0e",
+                "surface": "#131313",
+                "on-secondary-container": "#b7b5b4",
+                "inverse-surface": "#e5e2e1",
+                "secondary": "#c8c6c5",
+                "inverse-on-surface": "#313030"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Public Sans"],
+                "label": ["Public Sans"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #e60000 0%, #930100 100%);
+        }
+        body { background-color: #000; color: #e5e2e1; }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-white">
+
+<!-- Nav -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 md:py-4 md:px-12 bg-black border-b border-white/5">
+<a href="index.html"><img alt="MDK Motors Logo" class="h-10 md:h-14 w-auto object-contain" src="logo.png"/></a>
+<div class="hidden md:flex items-center gap-10">
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="index.html">Home</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="voorraad.html">Occasions</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="werkplaats.html">Onderhoud</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="over-ons.html">Over Ons</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-[#e60000] border-b-2 border-[#e60000] pb-1" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-[#e60000] text-white px-6 py-3 font-['Space_Grotesk'] uppercase tracking-widest text-xs md:text-sm font-bold hover:bg-[#930100] active:scale-95 transition-all duration-150 ease-in-out">Afspraak Maken</a>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative w-full min-h-[600px] md:min-h-[80vh] pt-32 pb-24 flex flex-col justify-center overflow-hidden bg-black text-left">
+  <div class="absolute inset-0 z-0">
+    <img src="building.png" class="w-full h-full object-cover grayscale opacity-40 scale-110 md:scale-125" alt="MDK Motors locatie"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
+    <div class="max-w-3xl">
+      <p class="font-label font-bold tracking-[0.3em] uppercase mb-4 text-xs text-[#e60000]">CONTACT &amp; AFSPRAAK</p>
+      <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none text-white mb-6">
+        NEEM<br/><span class="text-[#e60000]">CONTACT OP</span>
+      </h1>
+      <p class="font-body text-gray-300 max-w-xl text-lg leading-relaxed mb-8">Wij staan klaar om uw vragen te beantwoorden of een afspraak voor u in te plannen.</p>
+    </div>
+  </div>
+</header>
+
+<!-- 1. AFSPRAAK PLANNEN (bovenaan) -->
+<section class="py-24 px-12 bg-surface-container-lowest border-b border-white/5">
+  <div class="max-w-5xl mx-auto">
+    <div class="mb-12">
+      <p class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] mb-3 font-bold">Snel &amp; Eenvoudig</p>
+      <h2 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none">AFSPRAAK<br/><span class="text-[#e60000]">PLANNEN</span></h2>
+      <p class="text-gray-400 mt-4 max-w-lg">Wij bevestigen uw tijdslot binnen 2 uur na aanvraag. Eerstvolgende beschikbaarheid: <strong class="text-[#e60000]">Vandaag, 14:30</strong></p>
+    </div>
+
+    <div class="bg-surface-container-highest flex flex-col md:flex-row">
+      <!-- Info sidebar -->
+      <div class="md:w-2/5 p-12 flex flex-col justify-between bg-black">
+        <div>
+          <h3 class="font-headline text-2xl font-bold uppercase mb-8">Onze Services</h3>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 py-3 border-b border-white/5">
+              <span class="material-symbols-outlined text-[#e60000]">verified</span>
+              <span class="font-headline text-xs uppercase tracking-widest font-bold">APK Keuring</span>
+            </div>
+            <div class="flex items-center gap-4 py-3 border-b border-white/5">
+              <span class="material-symbols-outlined text-[#e60000]">build</span>
+              <span class="font-headline text-xs uppercase tracking-widest font-bold">Onderhoud</span>
+            </div>
+            <div class="flex items-center gap-4 py-3 border-b border-white/5">
+              <span class="material-symbols-outlined text-[#e60000]">troubleshoot</span>
+              <span class="font-headline text-xs uppercase tracking-widest font-bold">Diagnostiek</span>
+            </div>
+            <div class="flex items-center gap-4 py-3 border-b border-white/5">
+              <span class="material-symbols-outlined text-[#e60000]">settings</span>
+              <span class="font-headline text-xs uppercase tracking-widest font-bold">Motorrevisie</span>
+            </div>
+            <div class="flex items-center gap-4 py-3">
+              <span class="material-symbols-outlined text-[#e60000]">ac_unit</span>
+              <span class="font-headline text-xs uppercase tracking-widest font-bold">Airco Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 p-4 border-l-2 border-[#e60000]">
+          <p class="font-headline text-[10px] font-bold uppercase tracking-widest text-gray-500">Spoedservice</p>
+          <a href="tel:+31205550123" class="font-headline font-bold text-xl text-white hover:text-[#e60000] transition-colors">+31 20 555 0123</a>
+        </div>
+      </div>
+
+      <!-- Booking form -->
+      <div class="md:w-3/5 p-12 bg-surface-container-low">
+        <form class="space-y-7" onsubmit="event.preventDefault();this.querySelector('.submit-btn').textContent='Aanvraag Ontvangen ✓';this.querySelector('.submit-btn').style.background='#1a7a1a';">
+          <div class="grid grid-cols-2 gap-6">
+            <div class="relative">
+              <input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="VOORNAAM" type="text"/>
+            </div>
+            <div class="relative">
+              <input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="ACHTERNAAM" type="text"/>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="relative">
+              <input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="E-MAILADRES" type="email"/>
+            </div>
+            <div class="relative">
+              <input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="TELEFOONNUMMER" type="tel"/>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="relative">
+              <input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="AUTO MODEL / KENTEKEN" type="text"/>
+            </div>
+            <div class="relative">
+              <select class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] font-headline uppercase text-xs tracking-widest text-gray-600">
+                <option>SELECTEER SERVICE</option>
+                <option>APK KEURING</option>
+                <option>ONDERHOUD</option>
+                <option>DIAGNOSTIEK</option>
+                <option>REPARATIE</option>
+                <option>MOTORREVISIE</option>
+                <option>AIRCO SERVICE</option>
+              </select>
+            </div>
+          </div>
+          <div class="relative">
+            <input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="GEWENSTE DATUM" type="date"/>
+          </div>
+          <div class="relative">
+            <textarea class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-[#e60000] placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="AANVULLENDE OPMERKINGEN" rows="3"></textarea>
+          </div>
+          <div class="bg-[#e60000]/10 border border-[#e60000]/30 p-4 text-center mt-6 mb-2 rounded"><p class="text-[#e60000] font-label text-xs uppercase tracking-widest font-bold mb-1">Tip bij afspraak</p><p class="text-gray-300 text-sm">Motorolie met 15% korting en/of ruitenwisserbladen met 25% korting!</p></div>
+          <button class="submit-btn kinetic-gradient w-full py-5 font-headline font-bold uppercase tracking-[0.2em] text-white hover:opacity-90 active:scale-95 transition-all" type="submit">
+            AFSPRAAK AANVRAGEN
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CONTACTGEGEVENS & OPENINGSTIJDEN (midden) -->
+<section class="py-16 px-12 bg-black border-b border-white/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-10">
+      <p class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] mb-3 font-bold">Bezoek ons</p>
+      <h2 class="font-headline text-3xl font-black uppercase tracking-tighter">CONTACTGEGEVENS<br/><span class="text-[#e60000]">&amp; OPENINGSTIJDEN</span></h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Location tile -->
+      <div class="relative group overflow-hidden h-[320px] md:col-span-1">
+        <div class="absolute inset-0 grayscale contrast-125 opacity-40 group-hover:opacity-70 transition-opacity duration-500">
+          <img class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000" src="building.png" alt="MDK Motors locatie"/>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black to-transparent z-10">
+          <p class="font-headline font-bold text-xl uppercase tracking-tight">Onze Werkplaats</p>
+          <p class="text-gray-400 text-sm mt-1">Industriezone 4, Antwerpen, België</p>
+          <a class="text-[#e60000] text-xs uppercase font-black tracking-widest mt-4 flex items-center gap-2 hover:gap-4 transition-all" href="#">
+            Routebeschrijving <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Opening Hours -->
+      <div class="bg-surface-container-lowest p-8 flex flex-col justify-between border border-white/5 h-[320px]">
+        <span class="material-symbols-outlined text-[#e60000] text-2xl">schedule</span>
+        <div>
+          <p class="font-headline font-bold uppercase text-lg mb-4">Openingstijden</p>
+          <div class="space-y-3 text-[11px] uppercase tracking-widest font-medium">
+            <div class="flex justify-between border-b border-white/5 pb-2"><span class="text-gray-500">Maandag — Vrijdag</span><span class="text-white">08:00 - 17:30</span></div>
+            <div class="flex justify-between pt-1 pb-2 border-b border-white/5"><span class="text-[#e60000] font-bold">Zaterdag</span><span class="text-[#e60000] font-bold">Gesloten</span></div>
+            <div class="flex justify-between pt-1"><span class="text-[#e60000] font-bold">Zondag</span><span class="text-[#e60000] font-bold">Gesloten</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Direct Contact -->
+      <div class="bg-surface-container-lowest p-8 flex flex-col justify-between border border-white/5 h-[320px]">
+        <span class="material-symbols-outlined text-[#e60000] text-2xl">alternate_email</span>
+        <div>
+          <p class="font-headline font-bold uppercase text-lg mb-4">Direct Contact</p>
+          <div class="space-y-4">
+            <div>
+              <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-1">Telefoon</p>
+              <a href="tel:+31365337058" class="font-headline font-bold text-lg hover:text-[#e60000] transition-colors">036 533 70 58</a>
+            </div>
+            <div>
+              <p class="text-[10px] uppercase tracking-widest text-gray-500 mb-1">E-mail</p>
+              <a href="mailto:info@garagemulderdekoe.nl" class="font-headline font-bold text-lg hover:text-[#e60000] transition-colors">info@garagemulderdekoe.nl</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 3. CONTACT BERICHT (onderaan) -->
+<section class="py-24 px-12 bg-surface-container-lowest border-t border-white/5">
+  <div class="max-w-5xl mx-auto">
+    <div class="mb-12">
+      <p class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] mb-3 font-bold">Vrijblijvend</p>
+      <h2 class="font-headline text-4xl font-black uppercase tracking-tighter leading-none">STUUR EEN<br/><span class="text-[#e60000]">BERICHT</span></h2>
+      <p class="text-gray-400 mt-4 max-w-lg">Heeft u een vraag of wilt u meer informatie? Wij antwoorden binnen 24 uur.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+      <!-- Big location image -->
+      <div class="relative group overflow-hidden hidden md:block">
+        <div class="absolute inset-0 grayscale opacity-40 group-hover:opacity-60 transition-opacity duration-500">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe--wM7eXAWTC4knPT0zd7jLpIRiOx0j8ywlAxMTjv6MYlx0Bxt-DOxzKCWXVBKHXrlwO3N13oBILs_fiYdNe6gs_R3stMBfig1XANyqpJlOSzWhld5L1H8Nd1ZPjFPyLPgj4Qf7w-Q4RWoUhZNRGl2lgd9PHuh4lnHhBX6v5a_MHLGitGkhdkaC8i4lmsmMWDJB9AyECV11zw_wkjtfpKEzG0ef8tsY2U6wvOm1qssAPhO7a3orKBjSG6QsYuMspnKfNKYWfuCzZq" alt="MDK Motors werkplaats"/>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent to-black/40"></div>
+      </div>
+      <!-- Message form -->
+      <div class="bg-surface-container-lowest p-12 border border-white/5">
+        <form class="space-y-6" onsubmit="event.preventDefault();this.querySelector('.msg-btn').textContent='Verstuurd ✓';this.querySelector('.msg-btn').style.background='#1a7a1a';">
+          <div class="relative group">
+            <input class="peer w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] transition-colors py-3 px-0 text-white placeholder-transparent" id="m-name" placeholder="Naam" type="text"/>
+            <label class="absolute left-0 -top-3.5 text-[#e60000] text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#e60000] peer-focus:text-[10px]" for="m-name">Volledige Naam</label>
+          </div>
+          <div class="relative group">
+            <input class="peer w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] transition-colors py-3 px-0 text-white placeholder-transparent" id="m-email" placeholder="Email" type="email"/>
+            <label class="absolute left-0 -top-3.5 text-[#e60000] text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#e60000] peer-focus:text-[10px]" for="m-email">E-mailadres</label>
+          </div>
+          <div class="relative group">
+            <input class="peer w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] transition-colors py-3 px-0 text-white placeholder-transparent" id="m-subject" placeholder="Onderwerp" type="text"/>
+            <label class="absolute left-0 -top-3.5 text-[#e60000] text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#e60000] peer-focus:text-[10px]" for="m-subject">Onderwerp</label>
+          </div>
+          <div class="relative group">
+            <textarea class="peer w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] transition-colors py-3 px-0 text-white placeholder-transparent" id="m-msg" placeholder="Bericht" rows="5"></textarea>
+            <label class="absolute left-0 -top-3.5 text-[#e60000] text-[10px] uppercase tracking-widest transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-3 peer-focus:-top-3.5 peer-focus:text-[#e60000] peer-focus:text-[10px]" for="m-msg">Uw Bericht</label>
+          </div>
+          <button class="msg-btn kinetic-gradient w-full py-5 text-white font-headline font-bold uppercase tracking-[0.2em] text-xs hover:brightness-110 active:scale-[0.98] transition-all" type="submit">Bericht Versturen</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#1c1b1b] border-t border-white/5">
+<div class="text-xl font-bold text-[#e60000] uppercase font-headline text-center md:text-left">
+            <span class="text-white">Garage</span> Mulder-De Koe
+            <p class="text-xs font-['Public_Sans'] tracking-widest text-gray-500 mt-2 font-normal lowercase">info@garagemulderdekoe.nl | 036 533 70 58</p>
+</div>
+
+<div class="font-['Public_Sans'] text-xs tracking-widest uppercase text-gray-500 text-center md:text-right">
+            © 2024 Garage Mulder-De Koe B.V.<br/>
+            <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
+        </div>
+</footer>
+
+</body></html>

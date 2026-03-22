@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Volkswagen Polo 1.2 TSI | MDK MOTORS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary": "#690000",
+                        "tertiary-fixed-dim": "#b2c5ff",
+                        "on-tertiary-fixed-variant": "#0040a0",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container-highest": "#353534",
+                        "on-background": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#dae2ff",
+                        "on-primary-fixed": "#410000",
+                        "outline-variant": "#5f3f3a",
+                        "primary-fixed": "#ffdad4",
+                        "on-tertiary": "#002c72",
+                        "on-primary-container": "#fff7f5",
+                        "surface-dim": "#131313",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#930100",
+                        "primary-container": "#e60000",
+                        "on-tertiary-container": "#f8f7ff",
+                        "on-secondary": "#313030",
+                        "tertiary": "#b2c5ff",
+                        "outline": "#b08781",
+                        "inverse-primary": "#c00000",
+                        "background": "#131313",
+                        "surface-tint": "#ffb4a8",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#474746",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#e9bcb5",
+                        "surface-container-high": "#2a2a2a",
+                        "on-tertiary-fixed": "#001847",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-container": "#201f1f",
+                        "surface-variant": "#353534",
+                        "error": "#ffb4ab",
+                        "primary": "#ffb4a8",
+                        "on-surface": "#e5e2e1",
+                        "surface-bright": "#393939",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface": "#131313",
+                        "on-error": "#690005",
+                        "on-secondary-container": "#b7b5b4",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary-container": "#0068f9",
+                        "secondary": "#c8c6c5",
+                        "inverse-on-surface": "#313030"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Public Sans"],
+                        "label": ["Public Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-white">
+<!-- TopNavBar consistent with SCREEN_22 -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 md:py-4 md:px-12 bg-black border-b border-white/5">
+<a href="index.html"><img alt="MDK Motors Logo" class="h-10 md:h-14 w-auto object-contain" src="logo.png"/></a>
+<div class="hidden md:flex items-center gap-10">
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="index.html">Home</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-[#e60000] border-b-2 border-[#e60000] pb-1" href="voorraad.html">Occasions</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="werkplaats.html">Onderhoud</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="over-ons.html">Over Ons</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-[#e60000] text-white px-6 py-3 font-['Space_Grotesk'] uppercase tracking-widest text-xs md:text-sm font-bold hover:bg-[#930100] active:scale-95 transition-all duration-150 ease-in-out">Afspraak Maken</a>
+</nav>
+<main>
+<!-- Vehicle Hero Section -->
+<section class="relative w-full pt-16 px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+<div class="max-w-3xl">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] font-bold mb-4 block">Gecertificeerde Occasion</span>
+<h1 class="font-headline text-5xl md:text-8xl font-bold uppercase leading-none tracking-tighter">
+                    Volkswagen Polo <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">1.2 TSI</span>
+</h1>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-headline text-4xl md:text-6xl font-light text-white">€ 14.900</span>
+<span class="font-label text-xs uppercase tracking-widest text-white/40 mt-2">Excl. Afleverkosten</span>
+</div>
+</div>
+<!-- Asymmetric Bento Gallery -->
+<div class="grid grid-cols-12 gap-1 h-[600px] md:h-[800px] bg-white/5">
+<div class="col-span-12 md:col-span-8 bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Zijprofiel van een grijze Volkswagen Polo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBALn38SbgV7qB3IeUiL7Z3xJxbkzwRJv12pMajsm5qvzb08zzs1QOPb_k8zq9wAFIBPMkYv2MPwXNYsCSO4JreibrJtyZ7PjVBt6Td-BFWh15vHbhVGoP1_CcyYAgz4asanQu88jD3lMPxFZISYbZdaiifc0SZXlWAKtUKqxWv1yLgrA9qI9X6WTTg2aoQMlHQp9Rj9mOWi6FcvFJ-QzoHmHlF1xpov2E49qqyL_6STS2NEXNVEuSohO2GjF5nA6bQt-dm0usNc14j"/>
+</div>
+<div class="col-span-6 md:col-span-4 bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Interieur van een modern dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKYPm_0FUdqshed6blp1Agba1gN5rse42a9-goWILB8cIpdTH53zRwJq2dSkASQ9szoR8KhMYXR9UlfsPabNTk181T9NxNkutCSoyCxsJXLxsbsMnQWXXVOgxTl5x70_npJJY9l8XjFsuJJGEUxkN_SYp_IKO9ULq-2diT7wPgqDTcFCjynGjYVoIiKhq4RdiiA6RLNrYOVKRrLReEM9q75VeYgTTHQhaXQyphXKGDVTj0U_yWwx3yfhkk8WQVBlzrtXamGflJONhq"/>
+</div>
+<div class="col-span-6 md:col-span-4 bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Dichtbij van lichtmetalen velg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqMuBmjBP38axDTEm_qGanncj_o9AbTnUnJu2HeEH6Lj3iw3SPDmlAOFsbPK-ai5krCvmBIb7xxnjBG1EHJYG-G935KUY4WurXs8dypFO3CPvumNCSOFM9YqBrITpYZJ2Cuf-OoUj_M9_cl0Fz4QQvfKAgXJVTY164yRVcP4NJhLTWd49Eyd8W8nzYAs-68MKMbQlJ-APWyNNpObbkB2XKKXL-g3dzTfrIlIDals89O0_gShSfq-mkhhaN9gtiCIZtF6S03IAdPP7y"/>
+</div>
+<div class="col-span-12 md:col-span-8 flex gap-1">
+<div class="flex-1 bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Achterlicht detail van een hatchback" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi_8AmJPB7PSj9Lxai_gdiCfgAKlQXchu8zUBPcDjwvLgL5HymT9KagaGVjiveczkb61zmjTi5mPJM0mp0VjdUWyo1N1rLhzmtciwtpVs1Zs8psdS5ge7inSmHwClzCaMOaRmsjpCwvD1soV0w0vCEOe-p51nlla3JO75sr46tGjlvazZTrMPE0vxMb0o11LyTVvuUykaJJ8PmIZimFZYaW0EIinESyekZ068_1cElbiCAyY8BXUcWjHy3nciMHNTpY-Kp_pRtLzAO"/>
+</div>
+<div class="flex-1 bg-surface-container-highest flex flex-col items-center justify-center text-center p-6 cursor-pointer hover:bg-surface-bright transition-colors border-l border-white/5">
+<span class="material-symbols-outlined text-4xl mb-2 text-[#e60000]">grid_view</span>
+<span class="font-headline uppercase text-sm font-bold tracking-widest text-white">+12 Meer Foto's</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs Grid -->
+<section class="py-24 px-6 md:px-12 bg-background">
+<div class="mb-16">
+<h2 class="font-headline text-3xl font-bold uppercase tracking-tight text-white">Technische Specificaties</h2>
+<div class="w-24 h-1 bg-[#e60000] mt-4"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5">
+<div class="bg-surface-container-low p-10 flex flex-col gap-2">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Vermogen</span>
+<span class="font-headline text-4xl font-light">90 <span class="text-lg">PK</span></span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2 border-l border-white/5">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Transmissie</span>
+<span class="font-headline text-4xl font-light uppercase">7-DSG</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2 border-l border-white/5">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">0-100 KM/U</span>
+<span class="font-headline text-4xl font-light">10.8 <span class="text-lg">s</span></span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2 border-l border-white/5">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Kilometerstand</span>
+<span class="font-headline text-4xl font-light">42.500 <span class="text-lg">km</span></span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Brandstof</span>
+<span class="font-headline text-4xl font-light uppercase">Benzine</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2 border-l border-white/5">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Bouwjaar</span>
+<span class="font-headline text-4xl font-light">2019</span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2 border-l border-white/5">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Motorinhoud</span>
+<span class="font-headline text-4xl font-light">1.197 <span class="text-lg">cc</span></span>
+</div>
+<div class="bg-surface-container-low p-10 flex flex-col gap-2 border-l border-white/5">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-white/40">Eigenaren</span>
+<span class="font-headline text-4xl font-light">01</span>
+</div>
+</div>
+</section>
+<!-- Description and CTA Grid -->
+<section class="pb-24 px-6 md:px-12 grid grid-cols-12 gap-12">
+<!-- Left Side: Description -->
+<div class="col-span-12 md:col-span-7 space-y-12">
+<div class="bg-surface-container-low p-12 border-l-4 border-[#e60000]">
+<h3 class="font-headline text-2xl font-bold uppercase mb-6 text-white">Staat &amp; Kenmerken</h3>
+<p class="text-white/70 leading-relaxed mb-8 font-body text-lg">
+                    Deze Volkswagen Polo 1.2 TSI biedt de perfecte balans tussen stedelijke efficiëntie en sportief rijplezier. Afgewerkt in Reflex Silver Metallic en nauwkeurig onderhouden binnen ons gecertificeerde netwerk. De auto beschikt over een volledige onderhoudshistorie, twee originele sleutels en is schadevrij.
+                </p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e60000] text-sm">check_circle</span>
+<span class="text-xs font-bold uppercase tracking-widest text-white">R-Line Exterieur Pakket</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e60000] text-sm">check_circle</span>
+<span class="text-xs font-bold uppercase tracking-widest text-white">Touchscreen Infotainment met Carplay</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e60000] text-sm">check_circle</span>
+<span class="text-xs font-bold uppercase tracking-widest text-white">Park Distance Control (Vóór/Achter)</span>
+</li>
+<li class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#e60000] text-sm">check_circle</span>
+<span class="text-xs font-bold uppercase tracking-widest text-white">16-inch 'Las Minas' Lichtmetalen Velgen</span>
+</li>
+</ul>
+</div>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="flex-1 bg-[#e60000] text-white font-headline uppercase tracking-[0.2em] font-bold py-6 px-10 flex items-center justify-between group hover:bg-[#930100] transition-all">
+                    Plan een Proefrit
+                    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+<button class="flex-1 border border-white/20 text-white font-headline uppercase tracking-[0.2em] font-bold py-6 px-10 flex items-center justify-between hover:bg-white/5 transition-all">
+                    Inruilvoorstel
+                    <span class="material-symbols-outlined">swap_horiz</span>
+</button>
+</div>
+</div>
+<!-- Right Side: Inquiry Form -->
+<div class="col-span-12 md:col-span-5">
+<div class="sticky top-32 bg-surface-container-highest p-12 border-t-4 border-[#e60000]">
+<h3 class="font-headline text-2xl font-bold uppercase mb-2 text-white">Informatie Aanvragen</h3>
+<p class="font-label text-xs text-white/40 uppercase tracking-widest mb-10">Voorraad ID: MDK-VP-2019</p>
+<form class="space-y-6">
+<div class="group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-[#e60000] font-bold mb-2">Volledige Naam</label>
+<input class="w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] px-0 py-3 text-white placeholder:text-white/20" placeholder="Jan de Vries" type="text"/>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-[#e60000] font-bold mb-2">E-mailadres</label>
+<input class="w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] px-0 py-3 text-white placeholder:text-white/20" placeholder="jan@voorbeeld.nl" type="email"/>
+</div>
+<div class="group">
+<label class="block font-label text-[10px] uppercase tracking-widest text-[#e60000] font-bold mb-2">Bericht</label>
+<textarea class="w-full bg-transparent border-none border-b border-white/20 focus:ring-0 focus:border-[#e60000] px-0 py-3 text-white placeholder:text-white/20 resize-none" placeholder="Ik heb interesse in deze Volkswagen Polo..." rows="4"></textarea>
+</div>
+<button class="w-full bg-white text-black font-headline uppercase tracking-[0.2em] font-bold py-5 hover:bg-[#e60000] hover:text-white transition-all" type="submit">
+                        Verstuur Aanvraag
+                    </button>
+</form>
+<div class="mt-8 pt-8 border-t border-white/10 flex items-center gap-6">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface grayscale">
+<img class="w-full h-full object-cover" data-alt="Portret van een verkoopadviseur" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeGq04Mo88rmMdDcieXCZNN7X7yw1nxaMCXjMJcY7GrQvBq8fa0KHwsTLwqr-MTINsFbqvYZ-siUBBFPNqsubNXCX4Mya3OCQEGpmW4PwzCFAIpV7ANkLaa83jlkZxR-FS0x4tllFLylo4G_A9egzLGdUc55GYupgd8gkBwZ9eBa1dGxz6X1Pi7bR7y7cyzd_dJ4k5bKdWidQPrn3b-Sc4eIKdeuOT3VnNUzz3EqbnnFJnXEwSwVRW8u8meiOk6J5SLJsc9XmGLPFj"/>
+</div>
+<div>
+<span class="block font-headline text-sm font-bold uppercase text-white">Marcus Vance</span>
+<span class="block font-label text-[10px] text-white/40 uppercase">Senior Verkoopadviseur</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#1c1b1b] border-t border-white/5">
+<div class="text-xl font-bold text-[#e60000] uppercase font-headline text-center md:text-left">
+            <span class="text-white">Garage</span> Mulder-De Koe
+            <p class="text-xs font-['Public_Sans'] tracking-widest text-gray-500 mt-2 font-normal lowercase">info@garagemulderdekoe.nl | 036 533 70 58</p>
+</div>
+
+<div class="font-['Public_Sans'] text-xs tracking-widest uppercase text-gray-500 text-center md:text-right">
+            © 2024 Garage Mulder-De Koe B.V.<br/>
+            <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
+        </div>
+</footer>
+</body></html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#b2c5ff",
+                        "on-tertiary-fixed-variant": "#0040a0",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container-highest": "#1a1a1a",
+                        "on-background": "#e5e2e1",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed": "#dae2ff",
+                        "on-primary-fixed": "#410000",
+                        "outline-variant": "#5f3f3a",
+                        "primary-fixed": "#ffdad4",
+                        "on-tertiary": "#002c72",
+                        "on-primary-container": "#ffffff",
+                        "surface-dim": "#0a0a0a",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#930100",
+                        "primary-container": "#E60000",
+                        "on-tertiary-container": "#f8f7ff",
+                        "on-secondary": "#313030",
+                        "tertiary": "#b2c5ff",
+                        "outline": "#b08781",
+                        "inverse-primary": "#E60000",
+                        "background": "#000000",
+                        "surface-tint": "#E60000",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary-container": "#1a1a1a",
+                        "error-container": "#93000a",
+                        "on-surface-variant": "#e9bcb5",
+                        "surface-container-high": "#151515",
+                        "on-tertiary-fixed": "#001847",
+                        "surface-container-low": "#0a0a0a",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "primary-fixed-dim": "#ffb4a8",
+                        "surface-container": "#111111",
+                        "surface-variant": "#1a1a1a",
+                        "error": "#ffb4ab",
+                        "primary": "#E60000",
+                        "on-surface": "#e5e2e1",
+                        "surface-bright": "#222222",
+                        "surface-container-lowest": "#000000",
+                        "surface": "#000000",
+                        "on-error": "#690005",
+                        "on-secondary-container": "#b7b5b4",
+                        "inverse-surface": "#e5e2e1",
+                        "tertiary-container": "#0068f9",
+                        "secondary": "#c8c6c5",
+                        "inverse-on-surface": "#313030"
+                    },
+                    fontFamily: {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Space Grotesk"],
+                        "label": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #E60000 0%, #930100 100%);
+        }
+        body {
+            background-color: #000000;
+            color: #e5e2e1;
+        }
+        .nav-link-active {
+            position: relative;
+        }
+        .nav-link-active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #E60000;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary selection:text-white">
+<!-- Header -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 md:py-4 md:px-12 bg-black border-b border-white/5">
+<a href="index.html"><img alt="MDK Motors Logo" class="h-10 md:h-14 w-auto object-contain" src="logo.png"/></a>
+<div class="hidden md:flex items-center gap-10">
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="index.html">Home</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="voorraad.html">Occasions</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="werkplaats.html">Onderhoud</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-[#e60000] border-b-2 border-[#e60000] pb-1" href="over-ons.html">Over Ons</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-[#e60000] text-white px-6 py-3 font-['Space_Grotesk'] uppercase tracking-widest text-xs md:text-sm font-bold hover:bg-[#930100] active:scale-95 transition-all duration-150 ease-in-out">Afspraak Maken</a>
+</nav>
+<main>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[600px] md:min-h-[80vh] pt-32 pb-24 flex flex-col justify-center overflow-hidden bg-black text-left">
+  <div class="absolute inset-0 z-0">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZMiJa-HTIEyVQGY9mwKeYUP09nHm4X0ExP7gWBMFoJ7KjqM8Xid7VXXvpCsHpS0bS72QgCHOpaFW_VPXj37T2cpByI6bJmj-nkqb0IZ8NNtbO30AtUiL_DdEAOeuG8Rk-w3AH_CYbu0KgSoZz08Zvb1nCNbXLbB0Sww8nNu9gB_PFnDcKhWyQhL2pE6ESQUW3WVwyVtzXe3sm-RiZrSK4oNbQXf0uc6k9v4JwqkKpiT9H00zXspydv6dvd-QAFWvk5LBzBXtD12Bv" class="w-full h-full object-cover grayscale opacity-40 scale-110 md:scale-125" alt="Zijaanzicht luxe sportwagen"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
+    <div class="max-w-3xl">
+      <p class="font-label font-bold tracking-[0.3em] uppercase mb-4 text-xs text-[#e60000]">SINDS 1984 PRECISIE ENGINEERING</p>
+      <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none text-white mb-6">
+        OVER ONS<br/><span class="text-[#e60000]">MDK MOTORS</span>
+      </h1>
+      <p class="font-body text-gray-300 max-w-xl text-lg leading-relaxed mb-8">Passie voor mechaniek en prestaties. Al drie generaties lang de drijvende kracht achter ons bedrijf.</p>
+    </div>
+  </div>
+</header>
+<!-- History & Family Section -->
+<section class="py-24 px-12 bg-black">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 max-w-7xl mx-auto">
+<div class="md:col-span-7">
+<div class="aspect-video relative group">
+<div class="absolute inset-0 border border-primary/20 translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
+<img class="w-full h-full object-cover transition-all duration-700" alt="Garage MDK Mulder - De Koe gebouw buitenkant" src="building.png"/>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center">
+<h2 class="font-headline text-3xl md:text-4xl font-bold uppercase mb-8 flex items-center gap-4">
+<span class="w-12 h-[2px] bg-primary"></span>
+                    Over <span class="text-white">Garage</span> Mulder-De Koe
+                </h2>
+<div class="space-y-6 text-gray-400 leading-relaxed font-light text-lg">
+<p>Wij zijn een full-service autobedrijf voor alle automerken. Bij ons stapt u binnen in een informele sfeer waar een persoonlijke aanpak en vakkundig advies centraal staan, verzorgd door onze goed opgeleide monteurs.</p>
+<p>Onze missie is helder: wij willen dé <strong>"partner in mobiliteit voor de regio Almere"</strong> zijn. Wij garanderen altijd scherpe tarieven en maken vooraf heldere afspraken, zodat u nooit voor verrassingen komt te staan.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA: verwijst naar de gecombineerde contact pagina -->
+<section class="py-16 px-12 bg-surface-container-low border-y border-white/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+  <div>
+    <p class="font-label text-xs uppercase tracking-[0.3em] text-primary mb-2 font-bold">Vragen of een afspraak?</p>
+    <h2 class="font-headline text-3xl font-bold uppercase tracking-tight">Neem contact met ons op</h2>
+  </div>
+  <a href="contact.html" class="kinetic-gradient px-10 py-5 text-white font-headline font-bold uppercase tracking-widest text-sm hover:opacity-90 active:scale-95 transition-all whitespace-nowrap">Contact &amp; Afspraak →</a>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="py-32 px-12 bg-black text-center border-b border-white/5">
+<div class="max-w-4xl mx-auto">
+<span class="text-primary text-5xl font-serif italic mb-6 block leading-none">“</span>
+<p class="font-headline text-3xl md:text-5xl font-light italic leading-tight text-white mb-10">
+                Wij verkopen geen auto's. Wij leveren de machine die uw passie voor rijden opnieuw aanwakkert.
+            </p>
+<div class="flex flex-col items-center">
+<span class="w-10 h-[1px] bg-primary mb-4"></span>
+<p class="font-label uppercase tracking-[0.3em] text-primary text-xs font-black">Marc De Klerk, Oprichter</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#1c1b1b] border-t border-white/5">
+<div class="text-xl font-bold text-[#e60000] uppercase font-headline text-center md:text-left">
+            <span class="text-white">Garage</span> Mulder-De Koe
+            <p class="text-xs font-['Public_Sans'] tracking-widest text-gray-500 mt-2 font-normal lowercase">info@garagemulderdekoe.nl | 036 533 70 58</p>
+</div>
+
+<div class="font-['Public_Sans'] text-xs tracking-widest uppercase text-gray-500 text-center md:text-right">
+            © 2024 Garage Mulder-De Koe B.V.<br/>
+            <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
+        </div>
+</footer>
+</body></html>

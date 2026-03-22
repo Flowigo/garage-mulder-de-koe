@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Werkplaats &amp; Service | MDK MOTORS</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-primary": "#690000",
+                "tertiary-fixed-dim": "#b2c5ff",
+                "on-tertiary-fixed-variant": "#0040a0",
+                "on-secondary-fixed-variant": "#474746",
+                "surface-container-highest": "#353534",
+                "on-background": "#e5e2e1",
+                "on-error-container": "#ffdad6",
+                "tertiary-fixed": "#dae2ff",
+                "on-primary-fixed": "#410000",
+                "outline-variant": "#5f3f3a",
+                "primary-fixed": "#ffdad4",
+                "on-tertiary": "#002c72",
+                "on-primary-container": "#fff7f5",
+                "surface-dim": "#131313",
+                "on-secondary-fixed": "#1c1b1b",
+                "on-primary-fixed-variant": "#930100",
+                "primary-container": "#e60000",
+                "on-tertiary-container": "#f8f7ff",
+                "on-secondary": "#313030",
+                "tertiary": "#b2c5ff",
+                "outline": "#b08781",
+                "inverse-primary": "#c00000",
+                "background": "#131313",
+                "surface-tint": "#ffb4a8",
+                "secondary-fixed": "#e5e2e1",
+                "secondary-container": "#474746",
+                "error-container": "#93000a",
+                "on-surface-variant": "#e9bcb5",
+                "surface-container-high": "#2a2a2a",
+                "on-tertiary-fixed": "#001847",
+                "surface-container-low": "#1c1b1b",
+                "secondary-fixed-dim": "#c8c6c5",
+                "primary-fixed-dim": "#ffb4a8",
+                "surface-container": "#201f1f",
+                "surface-variant": "#353534",
+                "error": "#ffb4ab",
+                "primary": "#ffb4a8",
+                "on-surface": "#e5e2e1",
+                "surface-bright": "#393939",
+                "surface-container-lowest": "#0e0e0e",
+                "surface": "#131313",
+                "on-error": "#690005",
+                "on-secondary-container": "#b7b5b4",
+                "inverse-surface": "#e5e2e1",
+                "tertiary-container": "#0068f9",
+                "secondary": "#c8c6c5",
+                "inverse-on-surface": "#313030"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Public Sans"],
+                "label": ["Public Sans"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #e60000 0%, #930100 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 md:py-4 md:px-12 bg-black border-b border-white/5">
+<a href="index.html"><img alt="MDK Motors Logo" class="h-10 md:h-14 w-auto object-contain" src="logo.png"/></a>
+<div class="hidden md:flex items-center gap-10">
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="index.html">Home</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="voorraad.html">Occasions</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-[#e60000] border-b-2 border-[#e60000] pb-1" href="werkplaats.html">Onderhoud</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="over-ons.html">Over Ons</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-[#e60000] text-white px-6 py-3 font-['Space_Grotesk'] uppercase tracking-widest text-xs md:text-sm font-bold hover:bg-[#930100] active:scale-95 transition-all duration-150 ease-in-out">Afspraak Maken</a>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full min-h-[600px] md:min-h-[80vh] pt-32 pb-24 flex flex-col justify-center overflow-hidden bg-black text-left">
+  <div class="absolute inset-0 z-0 bg-black">
+    <video src="car-parts.mp4" autoplay loop muted playsinline class="w-full h-full object-cover opacity-70 scale-110 md:scale-125" aria-hidden="true"></video>
+    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/80"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
+    <div class="max-w-3xl">
+      <p class="font-label font-bold tracking-[0.3em] uppercase mb-4 text-xs text-[#e60000]">PRECISIE TECHNIEK</p>
+      <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none text-white mb-6">
+        WERKPLAATS<br/><span class="text-[#e60000]">&amp; SERVICE</span>
+      </h1>
+      <p class="font-body text-gray-300 max-w-xl text-lg leading-relaxed mb-8">Ervaar het toppunt van automotive zorg. Onze werkplaats is uitgerust met de modernste diagnoseapparatuur en wordt beheerd door specialisten die streven naar mechanische perfectie.</p>
+    </div>
+  </div>
+</header>
+<!-- Services Grid -->
+<section class="py-24 px-12 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-1 mb-24">
+<!-- APK Card -->
+<div class="md:col-span-8 bg-surface-container-low p-12 group hover:bg-surface-container transition-colors duration-300">
+<div class="flex justify-between items-start mb-12">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="verified">verified</span>
+<span class="font-headline text-surface-variant text-6xl font-black">01</span>
+</div>
+<h3 class="font-headline text-3xl font-bold uppercase mb-4 tracking-tight">APK-Keuring</h3>
+<p class="text-secondary max-w-xl mb-8">Volledige inspectie van remmen, wielophanging, schokbrekers, banden, verlichting, carrosserie en emissie. Wij zorgen dat uw auto veilig de weg op kan.</p>
+<div class="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-widest cursor-pointer group-hover:gap-4 transition-all">
+                    PLAN APK <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Maintenance Card -->
+<div class="md:col-span-4 bg-surface-container-highest p-12 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-12" data-icon="build">build</span>
+<h3 class="font-headline text-2xl font-bold uppercase mb-4 tracking-tight">Autoonderhoud</h3>
+</div>
+<p class="text-secondary text-sm mb-6">Voor jong &amp; oud, altijd mét behoud van uw fabrieksgarantie. Van kleine beurt tot grote revisie.</p>
+<div class="bg-surface/50 p-4 border-l-2 border-primary mt-auto">
+<p class="font-headline text-xs font-bold uppercase tracking-widest text-white">Actie: Motorolie</p>
+<p class="text-primary text-sm font-bold">15% korting bij afspraak</p>
+</div>
+</div>
+<!-- Diagnostics Card -->
+<div class="md:col-span-4 bg-surface-container-low p-12 hover:bg-surface-container transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-primary mb-12" data-icon="troubleshoot">troubleshoot</span>
+<h3 class="font-headline text-2xl font-bold uppercase mb-4 tracking-tight">Diagnose</h3>
+<p class="text-secondary text-sm mb-6">Merkonafhankelijke uitlezen en storingzoeken voor álle merken en modellen met de modernste apparatuur.</p>
+</div>
+<!-- Banden & Airco Card -->
+<div class="md:col-span-8 relative overflow-hidden h-[400px]">
+<img alt="Professionele monteur aan het werk" class="absolute inset-0 w-full h-full object-cover grayscale brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPIGi7mDXgn98nes0Wm350lQOxO-A8KXCo14e6gErj2SDbp4N1EI2bVLTDDapZGPmDoLeo7hbVNd3vkLLWHe0PxinFyTiYG0t1i7-tENHoSi2MBEI62GHbuy3k3-pP-pLsKDpbA-6Uzs6dwvJ8Hj5T1iVVG8-VjoatvwwegoScY-w_HS3FTATQDXJ8ec0n2bMu0vz6GsDUfyajixwu-fWbzM8AkW7kH9TGCzlGb4ppPisXgILYutqamczZLzHjx-VjQCEMEkcdK3Fj"/>
+<div class="relative z-10 p-12 h-full flex flex-col justify-end bg-gradient-to-t from-background to-transparent">
+<h3 class="font-headline text-3xl font-bold uppercase mb-2 tracking-tight">Bandenservice &amp; Airco</h3>
+<p class="text-gray-300 max-w-md">Compleet bandadvies en professioneel airco-onderhoud (jaarlijkse controle aanbevolen). Nu <strong>25% korting</strong> op ruitenwisserbladen bij uw afspraak!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specs Grid -->
+<section class="bg-surface-container-low py-24 px-12">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+<div class="md:w-1/3">
+<p class="font-label text-primary font-bold tracking-[0.3em] uppercase mb-4 text-xs">Technische Capaciteiten</p>
+<h2 class="font-headline text-5xl font-bold tracking-tighter uppercase leading-none mb-8">Werkplaats <br/>Faciliteiten</h2>
+<p class="text-secondary text-sm leading-relaxed mb-8">Onze faciliteit is geïntegreerd met de nieuwste Bosch en Snap-on diagnose-hardware, waardoor elk technisch detail nauwkeurig wordt gecontroleerd tijdens de service.</p>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 py-3 bg-surface px-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-headline text-xs uppercase tracking-widest font-bold">3D Uitlijnapparatuur</span>
+</li>
+<li class="flex items-center gap-4 py-3 bg-surface px-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-headline text-xs uppercase tracking-widest font-bold">Airco Systeem Testen</span>
+</li>
+<li class="flex items-center gap-4 py-3 bg-surface px-4">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+<span class="font-headline text-xs uppercase tracking-widest font-bold">Performance Dyno</span>
+</li>
+</ul>
+</div>
+<div class="md:w-2/3 grid grid-cols-2 gap-4">
+<div class="aspect-square bg-surface overflow-hidden">
+<img alt="Georganiseerd gereedschap in een werkplaats" class="w-full h-full object-cover opacity-60 grayscale hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhO-RP8fE7I5O0e3hKebEuV79v1i1CxhAnxG2oDe3WNWNJZdZaTAle_M_RE6ciTNVdrMeOiXQoLykvgIBt-OJwKNLNxXoQhfzFspDkEEjEfm33WVlQX-56z7esP9lgWZktCQsB_R8jqqYu5h4qe-WBGT6k8CNPfG219VlJ8XRkV6BCIxpK8veJRHrELTGE_4v5eeJV5BdyFcmq9UBLw449OMD3hSiirfMjdJeq15JQSmEf4S4uRFS1YmaBYcrEaHKsbCBGJKlVMFIx"/>
+</div>
+<div class="aspect-square bg-surface overflow-hidden mt-12">
+<img alt="Onderaanzicht van een auto op een hefbrug" class="w-full h-full object-cover opacity-60 grayscale hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2tKnth3FVsMdw-1YpF6JSd3jL-8U4sR7yDvN5QMgLRsck7wiUUsxJF2osJXkByd_6mYcLwjcsMhzwveNh_fqK5DlUV7cIqz-S_bIHsm7Hr52yEGS-7YQCH_TzY20TGqIns2WEAad5j3kWOiKaU9AJm6RCcRs-rA7Qb6D7mQOv7HiQ_nCbo4dwikIWDUHAzmOTyRkU0LxpK-zrTkFlZSJ2ugsuUZkT-2_UM2rXfLpW6RlwvVtgVBz8nt1lTBobXEC_v_iuU9pKouaA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form Section -->
+<section class="py-24 px-12 bg-surface">
+<div class="max-w-5xl mx-auto bg-surface-container-highest flex flex-col md:flex-row">
+<div class="md:w-1/2 p-16 flex flex-col justify-center">
+<h2 class="font-headline text-4xl font-bold uppercase tracking-tight mb-6">Maak een <span class="text-primary-container">Afspraak</span></h2>
+<p class="text-secondary mb-12">Plan uw onderhoud bij onze specialisten. Wij bevestigen uw tijdslot binnen 2 uur na aanvraag.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Spoedservice</p>
+<p class="font-headline font-bold text-xl">+31 20 555 0123</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 flex items-center justify-center bg-surface-container-low group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Onze Locatie</p>
+<p class="font-headline font-bold text-xl">Rotterdam, NL</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 bg-surface-container-low p-16">
+<form class="space-y-8">
+<div class="relative">
+<input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="VOLLEDIGE NAAM" type="text"/>
+</div>
+<div class="relative">
+<input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="E-MAILADRES" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="relative">
+<input class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="AUTO MODEL" type="text"/>
+</div>
+<div class="relative">
+<select class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary font-headline uppercase text-xs tracking-widest text-gray-600">
+<option>SELECTEER SERVICE</option>
+<option>APK KEURING</option>
+<option>ONDERHOUD</option>
+<option>DIAGNOSTIEK</option>
+<option>REPARATIE</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<textarea class="w-full bg-transparent border-none border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder:text-gray-600 placeholder:font-headline placeholder:text-xs placeholder:tracking-widest font-headline uppercase text-sm" placeholder="AANVULLENDE OPMERKINGEN" rows="3"></textarea>
+</div>
+<button class="kinetic-gradient w-full py-6 font-headline font-bold uppercase tracking-[0.2em] text-white hover:opacity-90 active:scale-95 transition-all" type="submit">
+                        AFSPRAAK AANVRAGEN
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#1c1b1b] border-t border-white/5">
+<div class="text-xl font-bold text-[#e60000] uppercase font-headline text-center md:text-left">
+            <span class="text-white">Garage</span> Mulder-De Koe
+            <p class="text-xs font-['Public_Sans'] tracking-widest text-gray-500 mt-2 font-normal lowercase">info@garagemulderdekoe.nl | 036 533 70 58</p>
+</div>
+
+<div class="font-['Public_Sans'] text-xs tracking-widest uppercase text-gray-500 text-center md:text-right">
+            © 2024 Garage Mulder-De Koe B.V.<br/>
+            <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
+        </div>
+</footer>
+</body></html>

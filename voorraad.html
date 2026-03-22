@@ -1,0 +1,396 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#690000",
+              "tertiary-fixed-dim": "#b2c5ff",
+              "on-tertiary-fixed-variant": "#0040a0",
+              "on-secondary-fixed-variant": "#474746",
+              "surface-container-highest": "#353534",
+              "on-background": "#e5e2e1",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#dae2ff",
+              "on-primary-fixed": "#410000",
+              "outline-variant": "#5f3f3a",
+              "primary-fixed": "#ffdad4",
+              "on-tertiary": "#002c72",
+              "on-primary-container": "#fff7f5",
+              "surface-dim": "#131313",
+              "on-secondary-fixed": "#1c1b1b",
+              "on-primary-fixed-variant": "#930100",
+              "primary-container": "#e60000",
+              "on-tertiary-container": "#f8f7ff",
+              "on-secondary": "#313030",
+              "tertiary": "#b2c5ff",
+              "outline": "#b08781",
+              "inverse-primary": "#c00000",
+              "background": "#131313",
+              "surface-tint": "#ffb4a8",
+              "secondary-fixed": "#e5e2e1",
+              "secondary-container": "#474746",
+              "error-container": "#93000a",
+              "on-surface-variant": "#e9bcb5",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary-fixed": "#001847",
+              "surface-container-low": "#1c1b1b",
+              "secondary-fixed-dim": "#c8c6c5",
+              "primary-fixed-dim": "#ffb4a8",
+              "surface-container": "#201f1f",
+              "surface-variant": "#353534",
+              "error": "#ffb4ab",
+              "primary": "#ffb4a8",
+              "on-surface": "#e5e2e1",
+              "surface-bright": "#393939",
+              "surface-container-lowest": "#0e0e0e",
+              "surface": "#131313",
+              "on-error": "#690005",
+              "on-secondary-container": "#b7b5b4",
+              "inverse-surface": "#e5e2e1",
+              "tertiary-container": "#0068f9",
+              "secondary": "#c8c6c5",
+              "inverse-on-surface": "#313030"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Public Sans"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+        }
+        .kinetic-gradient {
+            background: linear-gradient(135deg, #e60000 0%, #930100 100%);
+        }
+        .glass-nav {
+            background: rgba(19, 19, 19, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="font-body">
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-3 md:py-4 md:px-12 bg-black border-b border-white/5">
+<a href="index.html"><img alt="MDK Motors Logo" class="h-10 md:h-14 w-auto object-contain" src="logo.png"/></a>
+<div class="hidden md:flex items-center gap-10">
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="index.html">Home</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-[#e60000] border-b-2 border-[#e60000] pb-1" href="voorraad.html">Occasions</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="werkplaats.html">Onderhoud</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="over-ons.html">Over Ons</a>
+  <a class="font-['Space_Grotesk'] uppercase tracking-tighter font-bold text-base transition-colors duration-300 hover:text-[#e60000] text-white" href="contact.html">Contact</a>
+</div>
+<a href="contact.html" class="bg-[#e60000] text-white px-6 py-3 font-['Space_Grotesk'] uppercase tracking-widest text-xs md:text-sm font-bold hover:bg-[#930100] active:scale-95 transition-all duration-150 ease-in-out">Afspraak Maken</a>
+</nav>
+<main class="min-h-screen">
+<!-- Hero Section -->
+<header class="relative w-full min-h-[600px] md:min-h-[80vh] pt-32 pb-24 flex flex-col justify-center overflow-hidden bg-black text-left">
+  <div class="absolute inset-0 z-0">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuACfjO_ENQrFpmvm-Xe9swUnisl936BJtksN4hPdJTjBD5Vbzn_UUagW3P5o37HDMKgalufVSTmG0jEv6MuosyMv1K8acvwI9M9JycJM_6OFhFzBWsCgXgvvPJQ_DF83nv88zqUABRD78oGsVOlSUdzqZl6EINTFAKO6HsLZ0QcjRrKvXu1-LCUrPxdVUPFYMOBt94F-PKVapiekQndFus_rvybhg9gfvihhc7KHRm1b0XF3zNMsK6r-BeVupHqqHa0TyZhqpK0GC1i" class="w-full h-full object-cover grayscale opacity-40 scale-110 md:scale-125" alt="Occasion voorraad MDK Motors"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12">
+    <div class="max-w-3xl">
+      <p class="font-label font-bold tracking-[0.3em] uppercase mb-4 text-xs text-[#e60000]">GESELECTEERDE OCCASIONS</p>
+      <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter leading-none text-white mb-6">
+        ONZE<br/><span class="text-[#e60000]">VOORRAAD</span>
+      </h1>
+      <p class="font-body text-gray-300 max-w-xl text-lg leading-relaxed mb-8">Kwalitatief en eerlijk aanbod met de beste service inbegrepen.</p>
+    </div>
+  </div>
+</header>
+<!-- Filters Shell -->
+<div class="bg-surface-container-low p-8 px-6 md:px-12 flex flex-wrap gap-8 items-end border-b border-white/5">
+<div class="max-w-7xl mx-auto w-full flex flex-wrap gap-8 items-end">
+<div class="flex-1 min-w-[200px]">
+<label class="block font-label text-[10px] uppercase tracking-widest text-gray-500 mb-2">Merk</label>
+<select class="w-full bg-surface-variant border-none border-b border-outline-variant text-on-surface py-3 px-4 focus:ring-0 focus:border-primary transition-colors cursor-pointer">
+<option>Alle Merken</option>
+<option>Volkswagen</option>
+<option>Toyota</option>
+<option>Ford</option>
+<option>Opel</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block font-label text-[10px] uppercase tracking-widest text-gray-500 mb-2">Model</label>
+<select class="w-full bg-surface-variant border-none border-b border-outline-variant text-on-surface py-3 px-4 focus:ring-0 focus:border-primary transition-colors cursor-pointer">
+<option>Alle Modellen</option>
+</select>
+</div>
+<div class="flex-1 min-w-[200px]">
+<label class="block font-label text-[10px] uppercase tracking-widest text-gray-500 mb-2">Budget Maximaal</label>
+<select class="w-full bg-surface-variant border-none border-b border-outline-variant text-on-surface py-3 px-4 focus:ring-0 focus:border-primary transition-colors cursor-pointer">
+<option>Geen Limiet</option>
+<option>€ 5.000</option>
+<option>€ 10.000</option>
+<option>€ 15.000</option>
+</select>
+</div>
+<button class="bg-white text-black font-headline uppercase tracking-widest text-xs px-10 py-4 font-bold hover:bg-primary transition-colors">
+                        Zoeken
+                    </button>
+</div>
+</div>
+<!-- Inventory Grid -->
+<section class="px-12 py-12 bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Vehicle Card 1 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark grey hatchback car side profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACfjO_ENQrFpmvm-Xe9swUnisl936BJtksN4hPdJTjBD5Vbzn_UUagW3P5o37HDMKgalufVSTmG0jEv6MuosyMv1K8acvwI9M9JycJM_6OFhFzBWsCgXgvvPJQ_DF83nv88zqUABRD78oGsVOlSUdzqZl6EINTFAKO6HsLZ0QcjRrKvXu1-LCUrPxdVUPFYMOBt94F-PKVapiekQndFus_rvybhg9gfvihhc7KHRm1b0XF3zNMsK6r-BeVupHqqHa0TyZhqpK0GC1i"/>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-on-primary-container">Populair</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Volkswagen Golf</h3>
+<p class="text-gray-500 text-sm">1.4 TSI Highline</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-bold text-primary">€ 12.450</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
+<span class="text-xs uppercase font-medium">2016</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
+<span class="text-xs uppercase font-medium">84.200 km</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">local_gas_station</span>
+<span class="text-xs uppercase font-medium">Benzine</span>
+</div>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+                        Bekijk Details
+                    </button>
+</article>
+<!-- Vehicle Card 2 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Silver compact sedan on city street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFUhPcy_9JDy6oy1oTgzocHVybSVwkH-y6W-Hi9sWOsfkCvx9xe4IUBHD0iyFv2yU9i3wCZ2JhG-8ZuuRqfRDLASlNFbFlrRutAl4Ju32QxM6CyAzCUFsM3Gi0F51uswihXYXb37JOL1YY-CH8gJ9WZuhrVmY3NQgZqN2My2_t_Rb2n7zXllnMZaSuOlsSvj9ThAseKvujWdKfY2_yhh3YmgjA8BNdgspG5oslnHVu9qjFwjFVJbv0hHcbHCyFgGUFGUD-41Ytf9N"/>
+<div class="absolute top-4 left-4 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-black">Nieuw Binnen</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Toyota Yaris</h3>
+<p class="text-gray-500 text-sm">1.5 Hybrid Executive</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-bold text-primary">€ 14.900</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
+<span class="text-xs uppercase font-medium">2018</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
+<span class="text-xs uppercase font-medium">62.150 km</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">bolt</span>
+<span class="text-xs uppercase font-medium">Hybride</span>
+</div>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+                        Bekijk Details
+                    </button>
+</article>
+<!-- Vehicle Card 3 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Blue compact suv in bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPEF9IV4jgiME9N8MBqorHb6vLIngON1FUONu1N7hy9m83d6OHBkYjjd6bQu8DsR3FWDIKRlQZTxHmOiSsFqrHjh67-4YFL3v1T1kgd_mmQOh_jTQ0RxdtT5mOniMOMraUDoHl0zokKfph-5wYK_GoshkZLO1TFqulkfaqXhCv3TOgqy6EwMSjYrp71tlrjMmxOC8a8GM8eep7GInfyEv8cUbi2SOdtzYOYbDmF38skSWquEPmdKM3HgPRGTHSHH7-AOjTH9wgYvze"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Ford Fiesta</h3>
+<p class="text-gray-500 text-sm">1.0 EcoBoost ST-Line</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-bold text-primary">€ 9.750</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
+<span class="text-xs uppercase font-medium">2015</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
+<span class="text-xs uppercase font-medium">98.000 km</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">local_gas_station</span>
+<span class="text-xs uppercase font-medium">Benzine</span>
+</div>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+                        Bekijk Details
+                    </button>
+</article>
+<!-- Vehicle Card 4 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern white sedan at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvW2M68gLZJ9HAHlm1wa1wu6Yya68ul92my5QwDFcab16nHnN8c0k990QT9SZfRicNTUph0OeioDdkmHIVhu8RAT29MtxdsHu49dTK082toP_jGu5aQ8WFmkH6A9BlPKTu_wb-rwt2arcGNRmZxOr7gbFQpdTzJWgkeL6OXiVWyJjecvg4UcrgqPjMb0DPswZHejcMMABOt1EIpD4oGK01rsMeJ7YR1oSHZBzleib7m970oYiCOYhEjWAvgm3Ohmym1I_s1PVhl5O-"/>
+<div class="absolute top-4 left-4 bg-[#e60000] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">Scherpe Prijs</div>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Opel Corsa</h3>
+<p class="text-gray-500 text-sm">1.2 Turbo Edition</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-bold text-primary">€ 11.200</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
+<span class="text-xs uppercase font-medium">2017</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
+<span class="text-xs uppercase font-medium">75.400 km</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">local_gas_station</span>
+<span class="text-xs uppercase font-medium">Benzine</span>
+</div>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+                        Bekijk Details
+                    </button>
+</article>
+<!-- Vehicle Card 5 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Compact white city car front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5gKT7RLvRyUEb8lzpscfpBhIJI8vPNjZlmUhYZser1slwnyhqfapmulgVA72ZTqfqI5KstH88hEGRyT41ahJyMxBgBaZ1k789EovepxEntMT94yQO_EJ9NiT1v0Xalx33RkAibz_h8uGKa5J53I9U-NTkIk33ICED49klQzAppTh61GsCltwnOptFXoyLf-nxu0c8ch0nFuV6vVVaRb_8bxduksj1XWZKV1NQ8C9vJLerV7-3P_iUVBTcIf6spsEYws_uDqFIacTz"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Renault Clio</h3>
+<p class="text-gray-500 text-sm">TCe 90 Intens</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-bold text-primary">€ 8.950</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
+<span class="text-xs uppercase font-medium">2014</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
+<span class="text-xs uppercase font-medium">112.300 km</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">local_gas_station</span>
+<span class="text-xs uppercase font-medium">Benzine</span>
+</div>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+                        Bekijk Details
+                    </button>
+</article>
+<!-- Vehicle Card 6 -->
+<article class="group">
+<div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
+<img class="text-center w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Light blue small hatchback" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFQUeGrSm0kEcxTU7vs3q-qqAnqVh_4mprnsgO1zwVb5JTljhNtUmxEjwIvKV7USJn9dJ8hoqTo5K0z1SDe4cs_8p2IqCzmZ9pZ82PG5BSy19UZ_c8UwCIO-0lsRVu07vMbvwxCPJ0d_RHes9C2alOVh5o-H1l1f8064J_SNAFvZryr0xVXAphti1W9C2dsdomspCvVC8HvzmBV6VjN50qAoIoSo0UeTQ2fmtvu9IfBlAucRIn8U7HprS0ZNDYi14dWJM7BYAwvoc"/>
+</div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline text-2xl font-bold uppercase">Peugeot 208</h3>
+<p class="text-gray-500 text-sm">1.2 PureTech Allure</p>
+</div>
+<div class="text-right">
+<p class="font-headline text-2xl font-bold text-primary">€ 10.500</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
+<span class="text-xs uppercase font-medium">2016</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
+<span class="text-xs uppercase font-medium">89.100 km</span>
+</div>
+<div class="text-center">
+<span class="material-symbols-outlined text-primary text-sm block mb-1">local_gas_station</span>
+<span class="text-xs uppercase font-medium">Benzine</span>
+</div>
+</div>
+<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+                        Bekijk Details
+                    </button>
+</article>
+</div>
+<!-- Pagination/Load More -->
+<div class="mt-20 flex justify-center">
+<button class="flex items-center gap-4 group">
+<span class="font-headline uppercase tracking-widest text-sm font-bold">Laad meer auto's</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="bg-surface-container-low px-12 py-24">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/2">
+<h2 class="font-headline text-5xl font-bold uppercase tracking-tight mb-6">Altijd als <span class="italic text-[#E60000]">eerste</span> op de hoogte?</h2>
+<p class="text-gray-400 text-lg">Ontvang een seintje zodra er nieuwe betaalbare occasions binnenkomen die voldoen aan uw wensen.</p>
+</div>
+<div class="md:w-1/2 w-full flex">
+<input class="flex-1 bg-surface border-none border-b border-outline-variant py-4 px-6 focus:ring-0 focus:border-primary" placeholder="Uw e-mailadres" type="email"/>
+<button class="bg-primary-container text-on-primary-container font-headline uppercase tracking-widest text-xs px-10 py-4 font-bold hover:bg-white hover:text-black transition-all">
+                        Inschrijven
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#1c1b1b] border-t border-white/5">
+<div class="text-xl font-bold text-[#e60000] uppercase font-headline text-center md:text-left">
+            <span class="text-white">Garage</span> Mulder-De Koe
+            <p class="text-xs font-['Public_Sans'] tracking-widest text-gray-500 mt-2 font-normal lowercase">info@garagemulderdekoe.nl | 036 533 70 58</p>
+</div>
+
+<div class="font-['Public_Sans'] text-xs tracking-widest uppercase text-gray-500 text-center md:text-right">
+            © 2024 Garage Mulder-De Koe B.V.<br/>
+            <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
+        </div>
+</footer>
+</body></html>
