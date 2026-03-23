@@ -83,3 +83,49 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+// ── Boomerang Video Effect ────────────────────────
+function initBoomerang(v) {
+  if (!v) return;
+  
+  const setup = () => {
+    v.loop = false;
+    v.muted = true;
+    let reversing = false;
+
+    function check() {
+        if (!reversing && v.currentTime >= v.duration - 0.4) {
+            reversing = true;
+            v.pause();
+        }
+        
+        if (reversing) {
+            if (v.currentTime <= 0.1) {
+                reversing = false;
+                v.play().catch(() => {});
+            } else {
+                v.currentTime -= 0.033;
+            }
+        }
+        requestAnimationFrame(check);
+    }
+    requestAnimationFrame(check);
+
+    // Fallback if requestAnimationFrame misses the threshold
+    v.addEventListener('ended', () => {
+        if (!reversing) {
+            reversing = true;
+            v.currentTime = v.duration - 0.1;
+        }
+    });
+  };
+
+  if (v.readyState >= 1) setup();
+  else v.addEventListener('loadedmetadata', setup);
+}
+
+// Initialize boomerang for all hero videos
+document.querySelectorAll('#hero-video, header video').forEach(v => initBoomerang(v));
+
+// Initialize boomerang for all header videos
+document.querySelectorAll('header video').forEach(v => initBoomerang(v));
