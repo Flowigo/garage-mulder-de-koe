@@ -88,6 +88,15 @@
             background: rgba(19, 19, 19, 0.7);
             backdrop-filter: blur(20px);
         }
+        .reveal {
+            opacity: 0;
+            transform: translateY(80px) scale(0.95);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
     </style>
 </head>
 <body class="font-body">
@@ -120,12 +129,13 @@
   </div>
 </header>
 <!-- Filters Shell -->
-<div class="bg-surface-container-low p-8 px-6 md:px-12 flex flex-wrap gap-8 items-end border-b border-white/5">
+<div class="reveal bg-surface-container-low p-8 px-6 md:px-12 flex flex-wrap gap-8 items-end border-b border-white/5">
 <div class="max-w-7xl mx-auto w-full flex flex-wrap gap-8 items-end">
 <div class="flex-1 min-w-[200px]">
 <label class="block font-label text-[10px] uppercase tracking-widest text-gray-500 mb-2">Merk</label>
 <select class="w-full bg-surface-variant border-none border-b border-outline-variant text-on-surface py-3 px-4 focus:ring-0 focus:border-primary transition-colors cursor-pointer">
 <option>Alle Merken</option>
+<option>BMW</option>
 <option>Volkswagen</option>
 <option>Toyota</option>
 <option>Ford</option>
@@ -156,41 +166,41 @@
 <section class="px-12 py-12 bg-surface">
 <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
 <!-- Vehicle Card 1 -->
-<article class="group">
+<article class="reveal group">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dark grey hatchback car side profile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACfjO_ENQrFpmvm-Xe9swUnisl936BJtksN4hPdJTjBD5Vbzn_UUagW3P5o37HDMKgalufVSTmG0jEv6MuosyMv1K8acvwI9M9JycJM_6OFhFzBWsCgXgvvPJQ_DF83nv88zqUABRD78oGsVOlSUdzqZl6EINTFAKO6HsLZ0QcjRrKvXu1-LCUrPxdVUPFYMOBt94F-PKVapiekQndFus_rvybhg9gfvihhc7KHRm1b0XF3zNMsK6r-BeVupHqqHa0TyZhqpK0GC1i"/>
-<div class="absolute top-4 left-4 bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-on-primary-container">Populair</div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="BMW M3 Competition Frozen Brooklyn Grey" src="images/bmw-m3/50773125-2.jpg"/>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-on-primary-container">Nieuw Binnen</div>
 </div>
 <div class="flex justify-between items-start mb-4">
 <div>
-<h3 class="font-headline text-2xl font-bold uppercase">Volkswagen Golf</h3>
-<p class="text-gray-500 text-sm">1.4 TSI Highline</p>
+<h3 class="font-headline text-2xl font-bold uppercase">BMW M3</h3>
+<p class="text-gray-500 text-sm">3.0 Competition 510pk</p>
 </div>
 <div class="text-right">
-<p class="font-headline text-2xl font-bold text-primary">€ 12.450</p>
-<p class="text-[10px] uppercase tracking-widest text-gray-500">Incl. BTW</p>
+<p class="font-headline text-2xl font-bold text-primary">€ 89.500</p>
+<p class="text-[10px] uppercase tracking-widest text-gray-500">Excl. BTW</p>
 </div>
 </div>
 <div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/20 mb-6">
 <div class="text-center">
 <span class="material-symbols-outlined text-primary text-sm block mb-1">calendar_today</span>
-<span class="text-xs uppercase font-medium">2016</span>
+<span class="text-xs uppercase font-medium">2022</span>
 </div>
 <div class="text-center">
 <span class="material-symbols-outlined text-primary text-sm block mb-1">speed</span>
-<span class="text-xs uppercase font-medium">84.200 km</span>
+<span class="text-xs uppercase font-medium">28.450 km</span>
 </div>
 <div class="text-center">
 <span class="material-symbols-outlined text-primary text-sm block mb-1">local_gas_station</span>
 <span class="text-xs uppercase font-medium">Benzine</span>
 </div>
 </div>
-<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+<a href="detail.html" class="block w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all text-center">
                         Bekijk Details
-                    </button>
+                    </a>
 </article>
 <!-- Vehicle Card 2 -->
-<article class="group">
+<article class="reveal group">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Silver compact sedan on city street" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYFUhPcy_9JDy6oy1oTgzocHVybSVwkH-y6W-Hi9sWOsfkCvx9xe4IUBHD0iyFv2yU9i3wCZ2JhG-8ZuuRqfRDLASlNFbFlrRutAl4Ju32QxM6CyAzCUFsM3Gi0F51uswihXYXb37JOL1YY-CH8gJ9WZuhrVmY3NQgZqN2My2_t_Rb2n7zXllnMZaSuOlsSvj9ThAseKvujWdKfY2_yhh3YmgjA8BNdgspG5oslnHVu9qjFwjFVJbv0hHcbHCyFgGUFGUD-41Ytf9N"/>
 <div class="absolute top-4 left-4 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-black">Nieuw Binnen</div>
@@ -219,12 +229,12 @@
 <span class="text-xs uppercase font-medium">Hybride</span>
 </div>
 </div>
-<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+<a href="detail.html" class="block w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all text-center">
                         Bekijk Details
-                    </button>
+                    </a>
 </article>
 <!-- Vehicle Card 3 -->
-<article class="group">
+<article class="reveal group">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Blue compact suv in bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPEF9IV4jgiME9N8MBqorHb6vLIngON1FUONu1N7hy9m83d6OHBkYjjd6bQu8DsR3FWDIKRlQZTxHmOiSsFqrHjh67-4YFL3v1T1kgd_mmQOh_jTQ0RxdtT5mOniMOMraUDoHl0zokKfph-5wYK_GoshkZLO1TFqulkfaqXhCv3TOgqy6EwMSjYrp71tlrjMmxOC8a8GM8eep7GInfyEv8cUbi2SOdtzYOYbDmF38skSWquEPmdKM3HgPRGTHSHH7-AOjTH9wgYvze"/>
 </div>
@@ -252,12 +262,12 @@
 <span class="text-xs uppercase font-medium">Benzine</span>
 </div>
 </div>
-<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+<a href="detail.html" class="block w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all text-center">
                         Bekijk Details
-                    </button>
+                    </a>
 </article>
 <!-- Vehicle Card 4 -->
-<article class="group">
+<article class="reveal group">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern white sedan at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvW2M68gLZJ9HAHlm1wa1wu6Yya68ul92my5QwDFcab16nHnN8c0k990QT9SZfRicNTUph0OeioDdkmHIVhu8RAT29MtxdsHu49dTK082toP_jGu5aQ8WFmkH6A9BlPKTu_wb-rwt2arcGNRmZxOr7gbFQpdTzJWgkeL6OXiVWyJjecvg4UcrgqPjMb0DPswZHejcMMABOt1EIpD4oGK01rsMeJ7YR1oSHZBzleib7m970oYiCOYhEjWAvgm3Ohmym1I_s1PVhl5O-"/>
 <div class="absolute top-4 left-4 bg-[#e60000] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">Scherpe Prijs</div>
@@ -286,12 +296,12 @@
 <span class="text-xs uppercase font-medium">Benzine</span>
 </div>
 </div>
-<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+<a href="detail.html" class="block w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all text-center">
                         Bekijk Details
-                    </button>
+                    </a>
 </article>
 <!-- Vehicle Card 5 -->
-<article class="group">
+<article class="reveal group">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Compact white city car front view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5gKT7RLvRyUEb8lzpscfpBhIJI8vPNjZlmUhYZser1slwnyhqfapmulgVA72ZTqfqI5KstH88hEGRyT41ahJyMxBgBaZ1k789EovepxEntMT94yQO_EJ9NiT1v0Xalx33RkAibz_h8uGKa5J53I9U-NTkIk33ICED49klQzAppTh61GsCltwnOptFXoyLf-nxu0c8ch0nFuV6vVVaRb_8bxduksj1XWZKV1NQ8C9vJLerV7-3P_iUVBTcIf6spsEYws_uDqFIacTz"/>
 </div>
@@ -319,12 +329,12 @@
 <span class="text-xs uppercase font-medium">Benzine</span>
 </div>
 </div>
-<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+<a href="detail.html" class="block w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all text-center">
                         Bekijk Details
-                    </button>
+                    </a>
 </article>
 <!-- Vehicle Card 6 -->
-<article class="group">
+<article class="reveal group">
 <div class="aspect-[16/10] overflow-hidden bg-surface-container-highest mb-6 relative">
 <img class="text-center w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Light blue small hatchback" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjFQUeGrSm0kEcxTU7vs3q-qqAnqVh_4mprnsgO1zwVb5JTljhNtUmxEjwIvKV7USJn9dJ8hoqTo5K0z1SDe4cs_8p2IqCzmZ9pZ82PG5BSy19UZ_c8UwCIO-0lsRVu07vMbvwxCPJ0d_RHes9C2alOVh5o-H1l1f8064J_SNAFvZryr0xVXAphti1W9C2dsdomspCvVC8HvzmBV6VjN50qAoIoSo0UeTQ2fmtvu9IfBlAucRIn8U7HprS0ZNDYi14dWJM7BYAwvoc"/>
 </div>
@@ -352,9 +362,9 @@
 <span class="text-xs uppercase font-medium">Benzine</span>
 </div>
 </div>
-<button class="w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all">
+<a href="detail.html" class="block w-full border border-outline-variant/30 py-4 font-headline uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-black transition-all text-center">
                         Bekijk Details
-                    </button>
+                    </a>
 </article>
 </div>
 <!-- Pagination/Load More -->
@@ -367,7 +377,7 @@
 </section>
 <!-- Newsletter / CTA -->
 <section class="bg-surface-container-low px-12 py-24">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+<div class="reveal max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
 <div class="md:w-1/2">
 <h2 class="font-headline text-5xl font-bold uppercase tracking-tight mb-6">Altijd als <span class="italic text-[#E60000]">eerste</span> op de hoogte?</h2>
 <p class="text-gray-400 text-lg">Ontvang een seintje zodra er nieuwe betaalbare occasions binnenkomen die voldoen aan uw wensen.</p>
@@ -393,4 +403,16 @@
             <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
         </div>
 </footer>
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body></html>

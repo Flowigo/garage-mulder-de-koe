@@ -61,6 +61,15 @@
         .kinetic-gradient {
             background: linear-gradient(135deg, #e60000 0%, #930100 100%);
         }
+        .reveal {
+            opacity: 0;
+            transform: translateY(80px) scale(0.95);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-white">
@@ -97,7 +106,7 @@
 
 <!-- Booking Form Section -->
 <section class="py-24 px-12 bg-surface">
-  <div class="max-w-5xl mx-auto bg-surface-container-highest flex flex-col md:flex-row">
+  <div class="reveal max-w-5xl mx-auto bg-surface-container-highest flex flex-col md:flex-row">
     <!-- Contact info sidebar -->
     <div class="md:w-1/2 p-16 flex flex-col justify-center">
       <h2 class="font-headline text-4xl font-bold uppercase tracking-tight mb-6">Wij Staan<br/><span class="text-[#e60000]">Voor U Klaar</span></h2>
@@ -196,5 +205,16 @@
             <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
         </div>
 </footer>
-
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body></html>

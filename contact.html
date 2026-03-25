@@ -62,6 +62,15 @@
             background: linear-gradient(135deg, #e60000 0%, #930100 100%);
         }
         body { background-color: #000; color: #e5e2e1; }
+        .reveal {
+            opacity: 0;
+            transform: translateY(80px) scale(0.95);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
     </style>
 </head>
 <body class="font-body selection:bg-primary-container selection:text-white">
@@ -98,7 +107,7 @@
 
 <!-- 1. AFSPRAAK PLANNEN (bovenaan) -->
 <section class="py-24 px-12 bg-surface-container-lowest border-b border-white/5">
-  <div class="max-w-5xl mx-auto">
+  <div class="reveal max-w-5xl mx-auto">
     <div class="mb-12">
       <p class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] mb-3 font-bold">Snel &amp; Eenvoudig</p>
       <h2 class="font-headline text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none">AFSPRAAK<br/><span class="text-[#e60000]">PLANNEN</span></h2>
@@ -192,7 +201,7 @@
 
 <!-- 2. CONTACTGEGEVENS & OPENINGSTIJDEN (midden) -->
 <section class="py-16 px-12 bg-black border-b border-white/5">
-  <div class="max-w-7xl mx-auto">
+  <div class="reveal max-w-7xl mx-auto">
     <div class="mb-10">
       <p class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] mb-3 font-bold">Bezoek ons</p>
       <h2 class="font-headline text-3xl font-black uppercase tracking-tighter">CONTACTGEGEVENS<br/><span class="text-[#e60000]">&amp; OPENINGSTIJDEN</span></h2>
@@ -250,7 +259,7 @@
 
 <!-- 3. CONTACT BERICHT (onderaan) -->
 <section class="py-24 px-12 bg-surface-container-lowest border-t border-white/5">
-  <div class="max-w-5xl mx-auto">
+  <div class="reveal max-w-5xl mx-auto">
     <div class="mb-12">
       <p class="font-label text-xs uppercase tracking-[0.3em] text-[#e60000] mb-3 font-bold">Vrijblijvend</p>
       <h2 class="font-headline text-4xl font-black uppercase tracking-tighter leading-none">STUUR EEN<br/><span class="text-[#e60000]">BERICHT</span></h2>
@@ -302,5 +311,16 @@
             <span class="text-[10px] mt-1 block opacity-50">KVK: 81988087 | Jool-Hulstraat 17, Almere</span>
         </div>
 </footer>
-
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 </body></html>
